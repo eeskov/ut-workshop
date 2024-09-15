@@ -1,0 +1,20 @@
+{
+  "name": "workshops",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test:unit:basic": "npx vitest run unit/basic",
+    "test:unit:advanced": "npx vitest run unit/advanced",
+    "test:mock:basic": "npx vitest run mock/basic",
+    "test:mock:advanced": "npx vitest run mock/advanced"
+  },
+  "keywords": [
+    "unit tests",
+    "vitest"
+  ],
+  "author": "eeskov",
+  "license": "MIT",
+  "dependencies": {
+    "vitest": "^2.0.5"
+  }
+}

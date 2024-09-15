@@ -11,16 +11,6 @@ export async function notifyUser(userId: string): Promise<string> {
     return message;
 }
 
-// async mock
-
-export async function fetchData(url: string): Promise<any> {
-    const response = await fetch(url);
-    if (!response.ok) {
-        throw new Error('Network response was not ok');
-    }
-    return await response.json();
-}
-
 export async function fetchUser(fetchFn: (url: string) => Promise<any>, userId: string): Promise<any> {
     const url = `https://api.example.com/users/${userId}`;
     const data = await fetchFn(url);
